@@ -28,13 +28,14 @@
     
     <div class="container">
         <header>
-            <h1>Todo List</h1>
+            <h1>To do List</h1>
             <!-- Error message -->
             <div class="alert-message"></div>
             <div class="input-section">
-                <input type="text" placeholder="title . . ." class="input input-bordered input-secondary w-full max-w-xs" />
+                <input type="text" placeholder="Title" class="input input-bordered input-secondary w-full max-w-xs" />
                 <input type="date" class="input input-bordered input-secondary w-full max-w-xs schedule-date" />
-                <input type="text" placeholder="description . . ." class="input input-bordered input-secondary w-full max-w-xs" />
+                <input type="text" placeholder="Description" id="description" class="description input input-bordered input-secondary w-full max-w-xs" />
+                <input type="text" placeholder="subtask" id="subtask" class="subtask input input-bordered input-secondary w-full max-w-xs" />
                 <button class="btn btn-secondary add-task-button">
                     <i class="bx bx-plus bx-sm"></i>
                 </button>
@@ -60,6 +61,8 @@
                 <tr>
                     <th>Task</th>
                     <th>Due Date</th>
+                    <th>Description</th>
+                    <th>Sub Task</th>
                     <th>Status</th>
                     <th>Actions</th>
                 </tr>
